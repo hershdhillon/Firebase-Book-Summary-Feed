@@ -38,7 +38,7 @@ const form = document.querySelector('#add-book-form');
 
 db.settings({ timestampsInSnapshots: true})
 
-// create element and render cafe
+// create HTML element and render data in books collection
 function displaySummary(doc){
 
     let li = document.createElement('div');
@@ -208,7 +208,6 @@ function writeData(user, imageURL){
 
 //Buttons
 const homeBtn = document.querySelector('#home-btn');
-
 homeBtn.addEventListener('click', e => {
     e.preventDefault();
     window.location = 'homepage.html'
