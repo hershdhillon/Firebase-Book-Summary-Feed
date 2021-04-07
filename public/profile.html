@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style/profile.css">
+    <link rel="stylesheet" type="text/css" href="style/modal.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <title>Profile</title>
+
+</head>
+
+<body>
+
+<div class ="wrapper">
+
+<div class="header">
+
+    <div class="column left"> <div id="demo" class="profile-text" style="text-align: center;"> </div>  </div>
+
+    <div class="column middle">
+
+        <button class="summary-button" href="#SummaryModal" data-dismiss="modal" data-toggle="modal">Add Summary</button>
+
+    </div>
+
+    <div class="column right">
+
+    <nav>
+        <a id="home-btn">Home</a>
+        <a id="profile-btn">Profile</a>
+        <a id="logout-btn">Logout</a>
+        <div class="animation"></div>
+    </nav>
+    </div>
+</div>
+
+<div class="container">
+ <!--   <form id="add-book-form">
+        <input type="text" name="title" placeholder="Title of the Book">
+        <input type="text" name="author" placeholder="Author">
+        <input type="text" name="rating" placeholder="Rating">
+        <input type="file" id="submitImage" placeholder="Select Book Cover">
+        <button>Add Review</button>
+    </form>
+    -->
+    <ul id="book-list" name="book-list" class="book-list"></ul>
+</div>
+<div class="modal fade" id="SummaryModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="column" id="main">
+                    <h1>Write a Summary</h1>
+                    <form id="add-book-form">
+                        <div class="wrap-input validate-input" >
+                            <input type="text" class="input" name="title" placeholder="Title of the Book" required maxlength="45">
+                            <span class="focus-input"></span>
+                        </div>
+                        <div class="wrap-input validate-input">
+                            <input type="text" class="input" name="author" placeholder="Author" required>
+                            <span class="focus-input"></span>
+                        </div>
+                        <div class="wrap-input validate-input">
+                            <input type="text" class="input"  name="rating" placeholder="Rating" min="1" max="5">
+                        </div>
+                        <div class="wrap-input validate-input">
+                            <input type="file" class="input"  id="submitImage" accept="image/png, image/jpeg" placeholder="Select Book Cover">
+                            <span class="focus-input"></span>
+                        </div>
+                        <div class="wrap-input validate-input">
+                            <input type="text" class="input"  id="coverURL" name="coverURL" placeholder="Cover Image Link">
+                            <span class="focus-input"></span>
+                        </div>
+
+                        <div class="wrap-input validate-input">
+                            <textarea class="input" name="summary" placeholder="Summary"></textarea>
+                            <span class="focus-input"></span>
+                        </div>
+                        <div class="container-login-form-btn">
+                            <button id="submit-summary-btn" class="register-form-btn">Post Book Summary</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="error-modal">
+
+    <!-- Modal content -->
+    <div class="error-modal-content">
+        <p>Login Information is Incorrect.</p>
+    </div>
+
+</div>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="js/profile.js"></script>
+
+
+</body>
+</html>

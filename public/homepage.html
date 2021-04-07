@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<link rel="stylesheet" href="style/homepage.css">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+<div class ="wrapper">
+
+<div class="header">
+
+	<div class="column left"> <div class="homepage-text" style="text-align: center;"> Homepage </h4> </div></div>
+
+	<div class="column middle"><div style="text-align: center;">
+		<button class="refresh-button" onClick="window.location.reload();">Refresh Feed</button></div>
+	</div>
+
+
+	<div class="column right">
+
+
+	<nav>
+		<a id="home-btn">Home</a>
+		<a id="profile-btn">Profile</a>
+		<a id="logout-btn">Logout</a>
+		<div class="animation"></div>
+	</nav>
+		</div>
+
+</div>
+
+<div class="container"></div>
+
+<div class="load-more"><button class="load-btn">Load More</button></div>
+
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+<script src="js/homepage.js"></script>
+
+</body>
+</html>

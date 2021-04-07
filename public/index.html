@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/modal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <title>Book Reviews</title>
+
+</head>
+
+<div class="limiter">
+    <div class="container-login">
+        <div class="wrap-login">
+            <div class="login-pic js-tilt">
+                <img src="images/img-01.jpg" alt="IMG">
+            </div>
+
+            <form class="login-form">
+					<span class="login-form-title">
+						Summary Feed
+					</span>
+
+                <div class="wrap-input validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                    <input class="input" type="text" id="login-email" placeholder="Email"  autocomplete="on">
+                    <span class="focus-input"></span>
+                </div>
+
+                <div class="wrap-input validate-input" data-validate = "Password is required">
+                    <input class="input" type="password" id="login-password" placeholder="Password"  autocomplete="on">
+                    <span class="focus-input"></span>
+                </div>
+
+                <div class="container-login-form-btn">
+                    <button id= "login-button" class="login-form-btn">
+                        Login
+                    </button>
+                </div>
+
+                <div class="text-center">
+                    <a class="txt2" href="#RegisterModal" data-dismiss="modal" data-toggle="modal">
+                        Create your Account
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="RegisterModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="column" id="main">
+                    <h1>Create your Account </h1>
+                    <hr>
+                    <form>
+                        <label class="label">Name</label>
+                        <div class="wrap-input validate-input" >
+                            <input type="name" class="input" id="register-name" placeholder="Enter your Name" autocomplete="on">
+                            <span class="focus-input"></span>
+                        </div>
+                        <label class="label">E-mail </label>
+                        <div class="wrap-input validate-input">
+                            <input type="email" class="input" id="register-email" aria-describedby="emailHelp" placeholder="Enter your E-mail" autocomplete="on">
+                            <span class="focus-input"></span>
+                        </div>
+                        <label class="label">Password</label>
+                        <div class="wrap-input validate-input">
+
+                            <input type="password" class="input" id="register-password" placeholder="Enter your Password" autocomplete="on">
+                            <span class="focus-input"></span>
+                        </div>
+                        <div class="container-login-form-btn">
+                            <button id="register-button" class="register-form-btn">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="error-modal">
+
+    <!-- Modal content -->
+    <div class="error-modal-content">
+        <p>Login Information is Incorrect.</p>
+    </div>
+
+</div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="js/index.js"></script>
+
+<script src="js/tilt/tilt.jquery.min.js"></script>
+
+<script >
+    $('.js-tilt').tilt({
+        scale: 1.01
+    })
+</script>
+
+
+</body>
+</html>
